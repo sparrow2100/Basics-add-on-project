@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Knitting</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="body">
+    <button>Change Theme</button>
+    <div class="main-body">
+      <h1 class="title">You Should Try Knitting!</h1>
+      <div class="main"></div>
+      <div class="grid">
+        <img
+          src="https://images.unsplash.com/photo-1598871955918-f369a3f0898a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk4fHxrbml0dGluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=400&q=60"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1598871955497-27e7814b405d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGtuaXR0aW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1632335023920-f25da0358793?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGtuaXR0aW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1513890333407-6f85205e8ef2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGtuaXR0aW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1588030439132-2533eb419181?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE4fHxrbml0dGluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=400&q=60"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1544195522-04e7c58ba945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxrbml0dGluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=400&q=60"
+        />
+      </div>
+      <div class="paragraph-section">
+        <p class="paragraph">
+          "Knitting is a method for production of textile fabrics by interlacing
+          yarn loops with loops of the same or other yarns. It is used to create
+          many types of garments. Knitting may be done by hand or by machine.The
+          word is derived from knot and ultimately from the Old English cnyttan,
+          to knot. The exact origins of knitting are unknown, the earliest known
+          examples being cotton socks found in the remains of the city of
+          Fustat, now part of Cairo."
+        </p>
+      </div>
+      <a
+        href="https://en.wikipedia.org/wiki/Knitting"
+        target="_blank"
+        class="source"
+        >source</a
+      >
+    </div>
+    <p class="coded-by">Designed and Coded by Claire Sparrow-Clarke 😊</p>
+    <script>
+      let body = document.querySelector(".body");
+      let box = document.querySelector(".main-body");
+      let credit = document.querySelector(".coded-by");
+      let paragraph = document.querySelector(".paragraph");
+      let title = document.querySelector(".title");
+      let source = document.querySelector(".source");
+      let button = document.querySelector("button");
+      function changeTheme(event) {
+        body.classList.toggle("dark");
+        paragraph.classList.toggle("white");
+        credit.classList.toggle("white");
+        button.classList.toggle("light");
+        source.classList.toggle("light");
+        box.classList.toggle("black");
+        title.classList.toggle("white");
+      }
+      button.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
